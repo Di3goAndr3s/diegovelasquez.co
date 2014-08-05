@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+
+@import url(http://fonts.googleapis.com/css?family=Teko:300,400,700);
+
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+
+/*HELPER */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+hmtl {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+*:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+p {
+  font-family: "Maven Pro", sans-serif;
+}
+
+ul {
+  list-style-image: none !important;
+  list-style-type: none !important;
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*layout */
+
+.wrapper {
+  position: relative;
+  width: 1024px;
+  margin: 0 auto 0;
+}
+
+/*Header */
+
+header {
+  background: #82ca9c;
+  padding: 10px 0 0;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header .logo div {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: white;
+}
+
+header .logo div:nth-of-type(1) {
+  color: yellow;
+  margin-top: 8px;
+}
+
+header .logo div:nth-of-type(2) {
+  font-size: 5rem;
+  line-height: 100%;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+header .logo div:nth-of-type(3) {
+  -webkit-box-flex: none;
+  -webkit-flex: none;
+  -moz-box-flex: none;
+  -ms-flex: none;
+  flex: none;
+  float: left;
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: normal;
+  clear: left;
+}
+
+header nav {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  border: 0.1rem solid darkred;
+}
+
+header nav ul {
+  border: 0.1rem solid lime;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+header nav ul li {
+  border: 0.1rem solid chocolate;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  font-size: 2rem;
+  line-height: normal;
+  font-weight: normal;
+  color: white;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  position: relative;
+  border: 0.1rem solid navy;
+}
+
+header nav ul li a::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+}
+
+header nav ul li a i {
+  font-size: 1.6rem !important;
+  margin-right: 7px;
+  line-height: 0.1em !important;
+}

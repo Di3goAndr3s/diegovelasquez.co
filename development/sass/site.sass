@@ -1,0 +1,62 @@
+/*layout*/
+
+.wrapper
+	+page
+
+/*Header*/
+
+header
+	+bg($green)
+	padding: 10px 0 0
+	.wrapper
+		+box
+		+space
+
+	.logo
+		div
+			+font
+			+cero
+			+left
+			+co(white)
+			+nth1
+				+co(yellow)
+				+mt(8px)
+			+nth2
+				+fs(5, 100%)
+				+ml(5px)
+			+nth3
+				+noFlex
+				+left
+				+fs(2)
+				clear: left
+
+	nav
+		+item($end)
+		+b1
+		ul
+			+b3
+			+box
+			+space
+			+pb(10px)
+			li
+				+b4
+				margin: 0 10px
+				a
+					+fs(2, normal)
+					+co(white)
+					+transition(.6s)
+					+relative
+					+b2
+					+before
+						+content('')
+						+bot-left(0, 0)
+						+bg(white)
+						+size(2rem)
+					+hover
+						+co(yellow)
+					i
+						font-size: 1.6rem $i
+						+mr(7px)
+						line-height: .1em $i
+
+
